@@ -1,0 +1,45 @@
+.dino {
+    position: absolute;
+    width: 60px;
+    height: 100px;
+    background-image: url(images/8bit-michael.png);
+    background-repeat: no-repeat;
+    bottom: 0px;
+  }
+  
+  .obstacle {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background-image: url(images/computer-bug.png);
+    bottom: 0px;
+  }
+  
+  @keyframes slideright {
+    from {
+        background-position: 70000%;
+    }
+    to {
+        background-position: 0%;
+    }
+  }
+  
+  @-webkit-keyframes slideright {
+    from {
+        background-position: 70000%;
+    }
+    to {
+        background-position: 0%;
+    }
+  }
+  
+  #desert {
+    position: absolute;
+    bottom: 0px;
+    background-image: url(images/t-rex-background.png);
+    background-repeat: repeat-x;
+    animation: slideright 1000s infinite linear;
+    -webkit-animation: slideright 1000s infinite linear;
+    width: 100%;
+    height: 200px;
+  }
